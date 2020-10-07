@@ -1,0 +1,142 @@
+@font-face {
+    font-family: myFont;
+    src: url(myfont.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: myFont;
+}
+
+body {
+    background: url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.calculator {
+    width: 292.5px;
+    height: 520px;
+    background-color: #1A1A1A;
+    margin: 0 auto;
+    top: 20px;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 24px 0 rgba(0, 0, 0, 0.19);
+}
+
+h1 {
+    font-family: myfont;
+    font-size: 16px;
+    color: #F97552;
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 10px;
+}
+
+hr {
+    border-color: #4B4B4B;
+    border-width: 2px;
+}
+
+.screen {
+    height: 130.45px;
+}
+
+#history {
+    text-align: right;
+    height: 20px;
+    margin: 0 20px;
+    padding-top: 14px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    color: #919191;
+}
+
+#input {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: right;
+    height: 60px;
+    margin: 10px 20px;
+    color: #FFFFFF;
+    font-size: 30px;
+}
+
+#keyboard {
+    height: 329.55px;
+    text-align: center;
+}
+
+#C,
+#CE,
+.operator,
+.digit,
+#decimal,
+#plusmn,
+#equals {
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    margin-left: 23px;
+    margin-top: 20px;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    font-size: 16px;
+    font-family: myfont;
+    color: #E1E1E1;
+}
+
+button:nth-child(4),
+button:nth-child(8),
+button:nth-child(12),
+button:nth-child(16),
+button:nth-child(17),
+button:nth-child(19) button:nth-child(20) {
+    font-size: 20px;
+}
+
+button:nth-child(20) {
+    background-color: #F97552;
+    border-width: 2px;
+    border-color: #1A1A1A;
+}
+
+button:nth-child(20):active {
+    color: #1A1A1A;
+}
+
+.digit,
+#decimal {
+    background-color: #1A1A1A;
+    border-width: 2px;
+    border-color: #4F4F4F;
+}
+
+.operator,
+#C,
+#CE,
+#plusmn {
+    background-color: #4F4F4F;
+    border-width: 2px;
+    border-color: #1A1A1A;
+}
+
+.digit:active,
+.operator:active,
+#decimal:active,
+#C:active,
+#CE:active {
+    color: #F97552;
+}
+
+.digit:focus,
+.operator:focus,
+#decimal:focus,
+#C:active,
+#CE:active {
+    outline: none;
+}
